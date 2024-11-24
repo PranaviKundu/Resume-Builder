@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Your Resume</h1>
+
+        <div class="input-section">
+            <h2>Personal Information</h2>
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="email" id="email" placeholder="Email Address">
+            <input type="text" id="phone" placeholder="Phone Number">
+        </div>
+
+        <div class="input-section">
+            <h2>Education</h2>
+            <div class="education-entry">
+                <input type="text" placeholder="Degree">
+                <input type="text" placeholder="Institution">
+                <input type="text" placeholder="Graduation Date">
+            </div>
+            <button id="addEducation">Add Education</button>
+        </div>
+
+        <div class="input-section">
+            <h2>Skills</h2>
+            <input type="text" id="skillInput" placeholder="Enter Skill">
+            <button id="addSkill">Add Skill</button>
+            <div id="skillList"></div>
+        </div>
+
+        <div class="input-section">
+            <h2>Experience</h2>
+            <div class="experience-entry">
+                <input type="text" placeholder="Job Title">
+                <input type="text" placeholder="Company">
+                <textarea placeholder="Description"></textarea>
+            </div>
+            <button id="addExperience">Add Experience</button>
+        </div>
+
+        <button id="previewBtn">Preview Resume</button>
+
+        <div id="resumePreview" class="hidden">
+            <h2>Your Resume Preview</h2>
+            <div id="resumeContent"></div>
+        </div>
+
+        <button id="downloadBtn" class="hidden">Download PDF</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
